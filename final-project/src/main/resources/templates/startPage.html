@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <script th:src="(script.js)"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" th:href="@{/style.css}">
     <title>$$ Financial Lessons for Beginners $$</title>
    </head>
 <body>
-    <center>
+    <article class="center">
         <pre>
         <nav th:fragment="header">
             <h1 th:text = "${title}">$$ Financial Lessons for Beginners $$</h1><br>
@@ -27,8 +29,8 @@
 
                 Please choose one of the links or start from the beginning by simply clicking next. </p>
 
-            <button id = "nextButton">Next</button>
-            </pre>
-    </center>
+            <a href="/startPage">Next</a>
+        </pre>
+    </article>
 </body>
 </html>
