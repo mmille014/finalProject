@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <script th:src="(script.js)"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
     <title>Document</title>
 </head>
 <body>
-    <h1 th:text = "${title}"></h1><br>
-
+    <center>
+        <h1 th:text = "${title}"></h1><br>
     <pre>
             It is my belief that financial knowledge regarding the history of our economic system, how to save, invest, and better position one’s self for
 
@@ -19,9 +20,10 @@
 
         how these things can aid one in positioning themselves for a more successful future. Charts, graphs, calculator tools, and wise sayings have been
 
-        incorporated to make things easier, as well as memorable, for user.
+        incorporated to make things easier, as well as memorable for all users.
 
     </pre>
-    <button id = "enterButton">Enter</button>
+        <button style="background-color:#90EE90"; id = "enterButton">Next</button>
+    </center>
 </body>
 </html>
