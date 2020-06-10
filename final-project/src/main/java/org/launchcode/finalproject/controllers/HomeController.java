@@ -17,4 +17,10 @@ public class HomeController {
         model.addAttribute("title", "$$ Financial Lessons for Beginners $$");
         return "startPage";
     }
+
+    @GetMapping ("/lessons/Economy")
+    public String  displayEconomy(Model model) {
+        model.addAttribute("title", "The U.S. Economy");
+        return "/lessons/Economy";
+    }
 }
