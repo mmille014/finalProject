@@ -1,6 +1,19 @@
 h1 {
   background-color: #90EE90;
 }
+
+button {
+    background-color: #90EE90;
+}
+
 .error {
   color: red;
+}
+
+li {
+    list-style: none;
+}
+
+.center {
+    text-align: center;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <script th:src="(script.js)"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>$$ Financial Lessons for Beginners $$</title>
+   </head>
+<body>
+    <center>
+        <pre>
+        <nav th:fragment="header">
+            <h1 th:text = "${title}">$$ Financial Lessons for Beginners $$</h1><br>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/lessons/index">Home Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lessons/startPage">Start Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lessons/history">History</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lessons/compoundInterest">Compound Interest</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lessons/debtStrategies">Debt Strategies</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lessons/spendingTracker">Spending Tracker</a></li>
+                <li class="nav-item"><a class="nav-link" href="lessons/savingsTracker">Savings Tracker</a></li>
+            </ul>
+        </nav>
+
+            <p>
+                PREPARE TO BE INFORMED - FOR APPLIED KNOWLEDGE IS POWER!
+
+                Please choose one of the links or start from the beginning by simply clicking next. </p>
+
+            <button id = "nextButton">Next</button>
+            </pre>
+    </center>
+</body>
+</html>

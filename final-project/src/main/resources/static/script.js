@@ -3,7 +3,4 @@ window.addEventListener ("load", function() {
     button.addEventListener("click", function() {
         console.log("Button clicked");
     });
-
-    <h1 style="color:light-green;"></h1>
-
 });
