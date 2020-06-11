@@ -12,6 +12,12 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping ("index")
+    public String index1(Model model) {
+        model.addAttribute("title", "$$ Financial Lessons for Beginners $$");
+        return "index";
+    }
+
     @GetMapping ("startPage")
     public String  displayStartPage(Model model) {
         model.addAttribute("title", "$$ Financial Lessons for Beginners $$");
@@ -22,5 +28,11 @@ public class HomeController {
     public String  displayEconomy(Model model) {
         model.addAttribute("title", "The U.S. Economy");
         return "/lessons/Economy";
+    }
+
+    @GetMapping ("/lessons/debtStrategies")
+    public String  displayDebtStrategies(Model model) {
+        model.addAttribute("title", "Debt Strategies");
+        return "/lessons/debtStrategies";
     }
 }
