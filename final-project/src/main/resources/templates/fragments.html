@@ -1,11 +1,35 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org/">-->
+<!--<head th:replace="fragments :: head"></head>-->
+<!--<body class="container">-->
+
+<!--<h1>$$ Financial Lessons for Beginners $$</h1>-->
+
+<!--<header th:replace="fragments :: header"></header>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head th:replace="fragments :: head"></head>
-<body class="container">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title>$$ Financial Lessons for Beginners $$</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
 
-<h1>$$ Financial Lessons for Beginners $$</h1>
-
-<header th:replace="fragments :: header"></header>
+<nav th:fragment="header">
+    <h1 th:text="${title}">$$ Financial Lessons for Beginners $$</h1>
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="/spendingTracker">All SpendingTracker</a></li>
+        <li class="nav-item"><a class="nav-link" href="/spendingTracker/createExpense">Create Expense</a></li>
+        <li class="nav-item"><a class="nav-link" href="/spendingTracker/deleteExpense">Delete Expenses</a></li>
+    </ul>
+</nav>
 
 </body>
 </html>

@@ -1,11 +1,14 @@
 package org.launchcode.finalproject.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+
     @GetMapping
     public String index(Model model) {
         model.addAttribute("title", "$$ Financial Lessons for Beginners $$");
@@ -34,5 +37,11 @@ public class HomeController {
     public String  displayDebtStrategies(Model model) {
         model.addAttribute("title", "Debt Strategies");
         return "/lessons/debtStrategies";
+    }
+
+    @GetMapping ("/SpendingTracker")
+    public String  displaySpendingTracker(Model model) {
+        model.addAttribute("title", "Spending Tracker");
+        return "/SpendingTracker";
     }
 }

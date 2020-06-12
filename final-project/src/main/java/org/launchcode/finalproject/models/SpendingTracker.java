@@ -17,7 +17,6 @@ public class SpendingTracker {
     private int id;
 
     public SpendingTracker(String Expense, Integer Owe, Integer Paid, Integer Difference) {
-        this();
         this.expense = Expense;
         this.owe = Owe;
         this.paid = Paid;
