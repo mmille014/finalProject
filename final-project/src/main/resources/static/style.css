@@ -2,6 +2,14 @@ h1 {
   background-color: #90EE90;
 }
 
+h3 {
+  background-color: #90EE90;
+}
+
+h6 {
+  background-color: yellow;
+}
+
 button {
     background-color: #90EE90;
 }
@@ -21,3 +29,14 @@ li {
 .text-wrap {
     text-align: center;
 }
+
+p {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+ul {
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
